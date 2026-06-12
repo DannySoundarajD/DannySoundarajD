@@ -15,7 +15,7 @@
   &nbsp;
   <a href="mailto:YOUR_EMAIL@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   &nbsp;
-  <a href="https://x.com/Danny_D_07"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
+  <a href="https://x.com/DannySoundarajD"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
   &nbsp;
   <a href="https://github.com/DannySoundarajD/Sentinel"><img src="https://img.shields.io/badge/Sentinel_AI-6E40C9?style=for-the-badge&logo=rust&logoColor=white"/></a>
   &nbsp;
