@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="700" height="520">
+  <defs>
+    <style>
+      .mono { font-family: 'Courier New', Courier, monospace; font-size: 13px; }
+      .prompt-path { fill: #1db954; }
+      .prompt-sym  { fill: #2ecc71; }
+      .cmd         { fill: #e0ffe0; }
+      .out-key     { fill: #4ec94e; }
+      .out-val     { fill: #b8ffb8; }
+      .out-dim     { fill: #4a7a4a; }
+      .out-arrow   { fill: #27ae60; }
+      .out-quote   { fill: #95e895; font-style: italic; }
+      .out-bold    { fill: #7fff7f; }
+      .scanline    { fill: none; }
+    </style>
+    <!-- scanline pattern -->
+    <pattern id="scan" x="0" y="0" width="700" height="2" patternUnits="userSpaceOnUse">
+      <rect width="700" height="1" fill="rgba(0,0,0,0.10)"/>
+    </pattern>
+    <!-- cursor blink -->
+    <rect id="cur" width="8" height="14" fill="#39ff14">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </defs>
+
+  <!-- BG -->
+  <rect width="700" height="520" fill="#090f09" rx="10"/>
+
+  <!-- Title bar -->
+  <rect width="700" height="34" fill="#0f1a0f" rx="10"/>
+  <rect y="24" width="700" height="10" fill="#0f1a0f"/>
+  <circle cx="18" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="36" cy="17" r="6" fill="#ffbd2e"/>
+  <circle cx="54" cy="17" r="6" fill="#28ca41"/>
+  <text x="350" y="22" text-anchor="middle" font-family="Courier New,monospace" font-size="12" fill="#2d6a2d" letter-spacing="1">danny@sentinx: ~/projects</text>
+
+  <!-- scanline overlay -->
+  <rect width="700" height="520" fill="url(#scan)" rx="10" opacity="0.4"/>
+
+  <!-- ───── BLOCK 1: whoami ───── -->
+  <!-- prompt line 1 -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="0.3s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="62" class="mono prompt-sym">╭─[</text>
+    <text x="52" y="62" class="mono prompt-path">~/projects</text>
+    <text x="122" y="62" class="mono prompt-sym">]</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="0.4s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="78" class="mono prompt-sym">╰─$ </text>
+    <text x="52" y="78" class="mono cmd">
+      <tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="0.5s" dur="0.01s" fill="freeze"/>w</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="0.58s" dur="0.01s" fill="freeze"/>h</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="0.66s" dur="0.01s" fill="freeze"/>o</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="0.74s" dur="0.01s" fill="freeze"/>a</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="0.82s" dur="0.01s" fill="freeze"/>m</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="0.90s" dur="0.01s" fill="freeze"/>i</tspan>
+    </text>
+  </g>
+  <!-- output -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="1.2s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="96" class="mono out-bold">danny-soundaraj</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="1.3s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="112" class="mono out-dim">3rd year IT · RMDEC, Chennai · AI Infrastructure Engineer in the making</text>
+  </g>
+
+  <!-- ───── BLOCK 2: cat identity.txt ───── -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="1.7s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="134" class="mono prompt-sym">╭─[</text>
+    <text x="52" y="134" class="mono prompt-path">~/projects</text>
+    <text x="122" y="134" class="mono prompt-sym">]</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="1.8s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="150" class="mono prompt-sym">╰─$ </text>
+    <text x="52" y="150" class="mono cmd">
+      <tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="1.9s" dur="0.01s" fill="freeze"/>c</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="1.97s" dur="0.01s" fill="freeze"/>a</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.04s" dur="0.01s" fill="freeze"/>t</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.11s" dur="0.01s" fill="freeze"/> </tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.18s" dur="0.01s" fill="freeze"/>i</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.25s" dur="0.01s" fill="freeze"/>d</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.32s" dur="0.01s" fill="freeze"/>e</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.39s" dur="0.01s" fill="freeze"/>n</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.46s" dur="0.01s" fill="freeze"/>t</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.53s" dur="0.01s" fill="freeze"/>i</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.60s" dur="0.01s" fill="freeze"/>t</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.67s" dur="0.01s" fill="freeze"/>y</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.74s" dur="0.01s" fill="freeze"/>.</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.81s" dur="0.01s" fill="freeze"/>t</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.88s" dur="0.01s" fill="freeze"/>x</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="2.95s" dur="0.01s" fill="freeze"/>t</tspan>
+    </text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="3.2s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="168" class="mono"><tspan class="out-key">role</tspan><tspan class="out-dim"> ──▶ </tspan><tspan class="out-val">AI Infrastructure Engineer</tspan></text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="3.32s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="184" class="mono"><tspan class="out-key">mission</tspan><tspan class="out-dim"> ──▶ </tspan><tspan class="out-val">Build AI offline. No cloud. No API keys. No bills.</tspan></text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="3.44s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="200" class="mono"><tspan class="out-key">stack</tspan><tspan class="out-dim"> ──▶ </tspan><tspan class="out-val">Android kernel C → Rust async → Agentic AI</tspan></text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="3.56s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="216" class="mono"><tspan class="out-key">creed</tspan><tspan class="out-dim"> ──▶ </tspan><tspan class="out-quote">"Best AI works when the internet goes down."</tspan></text>
+  </g>
+
+  <!-- ───── BLOCK 3: cat obsessed.txt ───── -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="4.0s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="238" class="mono prompt-sym">╭─[</text>
+    <text x="52" y="238" class="mono prompt-path">~/projects</text>
+    <text x="122" y="238" class="mono prompt-sym">]</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="4.1s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="254" class="mono prompt-sym">╰─$ </text>
+    <text x="52" y="254" class="mono cmd">
+      <tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="4.2s" dur="0.01s" fill="freeze"/>c</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="4.27s" dur="0.01s" fill="freeze"/>a</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="4.34s" dur="0.01s" fill="freeze"/>t</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="4.41s" dur="0.01s" fill="freeze"/> </tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="4.48s" dur="0.01s" fill="freeze"/>o</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="4.55s" dur="0.01s" fill="freeze"/>b</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="4.62s" dur="0.01s" fill="freeze"/>s</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="4.69s" dur="0.01s" fill="freeze"/>e</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="4.76s" dur="0.01s" fill="freeze"/>s</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="4.83s" dur="0.01s" fill="freeze"/>s</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="4.90s" dur="0.01s" fill="freeze"/>e</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="4.97s" dur="0.01s" fill="freeze"/>d</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="5.04s" dur="0.01s" fill="freeze"/>.</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="5.11s" dur="0.01s" fill="freeze"/>t</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="5.18s" dur="0.01s" fill="freeze"/>x</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="5.25s" dur="0.01s" fill="freeze"/>t</tspan>
+    </text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="5.5s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="272" class="mono"><tspan class="out-arrow">→ </tspan><tspan class="out-val">Context window engineering — max intelligence in 2048 tokens</tspan></text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="5.62s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="288" class="mono"><tspan class="out-arrow">→ </tspan><tspan class="out-val">Agentic systems that plan, remember, act — no babysitting</tspan></text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="5.74s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="304" class="mono"><tspan class="out-arrow">→ </tspan><tspan class="out-val">SentinX OS — Linux distro where the OS is AI-native</tspan></text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="5.86s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="320" class="mono"><tspan class="out-arrow">→ </tspan><tspan class="out-val">Gemma4 &amp; Qwen3 locally on RTX 2050 4GB — zero OpenAI</tspan></text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="5.98s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="336" class="mono"><tspan class="out-arrow">→ </tspan><tspan class="out-val">DerpFest Android 16 — keeping sm6150 alive on AOSP</tspan></text>
+  </g>
+
+  <!-- ───── BLOCK 4: ls achievements ───── -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="6.4s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="358" class="mono prompt-sym">╭─[</text>
+    <text x="52" y="358" class="mono prompt-path">~/projects</text>
+    <text x="122" y="358" class="mono prompt-sym">]</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="6.5s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="374" class="mono prompt-sym">╰─$ </text>
+    <text x="52" y="374" class="mono cmd">
+      <tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="6.6s" dur="0.01s" fill="freeze"/>l</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="6.67s" dur="0.01s" fill="freeze"/>s</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="6.74s" dur="0.01s" fill="freeze"/> </tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="6.81s" dur="0.01s" fill="freeze"/>a</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="6.88s" dur="0.01s" fill="freeze"/>c</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="6.95s" dur="0.01s" fill="freeze"/>h</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="7.02s" dur="0.01s" fill="freeze"/>i</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="7.09s" dur="0.01s" fill="freeze"/>e</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="7.16s" dur="0.01s" fill="freeze"/>v</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="7.23s" dur="0.01s" fill="freeze"/>e</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="7.30s" dur="0.01s" fill="freeze"/>m</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="7.37s" dur="0.01s" fill="freeze"/>e</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="7.44s" dur="0.01s" fill="freeze"/>n</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="7.51s" dur="0.01s" fill="freeze"/>t</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="7.58s" dur="0.01s" fill="freeze"/>s</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="7.65s" dur="0.01s" fill="freeze"/>/</tspan>
+    </text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="7.9s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="392" class="mono">
+      <tspan class="out-bold">derpfest-maintainer/  </tspan>
+      <tspan class="out-bold">sentinel-v0.1.0/  </tspan>
+      <tspan class="out-bold">sentinx-os-wip/  </tspan>
+      <tspan class="out-bold">medisync-healthbridge/</tspan>
+    </text>
+  </g>
+
+  <!-- ───── BLOCK 5: uname ───── -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="8.3s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="414" class="mono prompt-sym">╭─[</text>
+    <text x="52" y="414" class="mono prompt-path">~/projects</text>
+    <text x="122" y="414" class="mono prompt-sym">]</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="8.4s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="430" class="mono prompt-sym">╰─$ </text>
+    <text x="52" y="430" class="mono cmd">
+      <tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="8.5s" dur="0.01s" fill="freeze"/>u</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="8.57s" dur="0.01s" fill="freeze"/>n</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="8.64s" dur="0.01s" fill="freeze"/>a</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="8.71s" dur="0.01s" fill="freeze"/>m</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="8.78s" dur="0.01s" fill="freeze"/>e</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="8.85s" dur="0.01s" fill="freeze"/> </tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="8.92s" dur="0.01s" fill="freeze"/>-</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" begin="8.99s" dur="0.01s" fill="freeze"/>a</tspan>
+    </text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="9.2s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="448" class="mono">
+      <tspan class="out-dim">Linux sentinx 6.x.x-arch1 x86_64 </tspan>
+      <tspan class="out-key">Arch Linux</tspan>
+      <tspan class="out-dim"> — XFCE — always online-optional</tspan>
+    </text>
+  </g>
+
+  <!-- ───── final prompt + blinking cursor ───── -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="9.6s" dur="0.01s" fill="freeze"/>
+    <text x="18" y="470" class="mono prompt-sym">╭─[</text>
+    <text x="52" y="470" class="mono prompt-path">~/projects</text>
+    <text x="122" y="470" class="mono prompt-sym">]</text>
+    <text x="18" y="486" class="mono prompt-sym">╰─$ </text>
+    <rect x="52" y="474" width="8" height="14" fill="#39ff14">
+      <animate attributeName="opacity" values="1;0;1" begin="9.6s" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- vignette edges -->
+  <rect width="700" height="520" rx="10" fill="none" stroke="#0a1a0a" stroke-width="18"/>
+</svg>
