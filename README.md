@@ -118,23 +118,25 @@
 ---
 
 
-## 📊 GitHub Stats
+## 📊 GitHub Analytics
 
 <div align="center">
 
-<!-- Language breakdown — custom card styling -->
-<a href="https://github.com/DannySoundarajD">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DannySoundarajD&layout=donut&theme=transparent&hide_border=true&title_color=6E40C9&text_color=c9d1d9&langs_count=8&hide=html,css&custom_title=Languages+I+Actually+Write" height="200"/>
-</a>
+<img
+src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DannySoundarajD&theme=github_dark"
+width="100%"/>
 
-<!-- Activity graph — full width, more visual than cards -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=DannySoundarajD&theme=tokyo-night&hide_border=true&area=true&area_color=6E40C9&line=6E40C9&point=ffffff&bg_color=0d1117" width="98%"/>
+<br/>
 
-<!-- Streak separately — cleaner than the combined card -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=DannySoundarajD&theme=transparent&hide_border=true&stroke=6E40C9&ring=6E40C9&fire=FF6F00&currStreakLabel=6E40C9&sideLabels=c9d1d9&dates=888888" height="150"/>
+<img
+src="https://github-readme-stats.vercel.app/api/top-langs/?username=DannySoundarajD&layout=compact&theme=transparent&hide_border=true&langs_count=10"
+height="180"/>
+
+<img
+src="https://github-readme-streak-stats.herokuapp.com/?user=DannySoundarajD&theme=transparent&hide_border=true"
+height="180"/>
 
 </div>
-
 ---
 
 ## 🏆 Highlights
